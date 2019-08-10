@@ -66,6 +66,6 @@ urlpatterns = [
     url(r'c/(?P<pk>\d+)/(?P<ts>\d+)/$', views.VolunteerConsent.as_view(), name='volunteer_consent'),
     url('missing_and_finding_persons/', views.ReportFindPerson.as_view(), name='report_find_person'),
     url('hospitals/', views.HospitalView.as_view(), name='hospitals'),
-    url('announcements/api', views.announcement_api, name='announcements_api'),
+    url('api/announcements', views.announcement_api, name='announcements_api'),
 
 ]
